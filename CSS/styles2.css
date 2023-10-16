@@ -1,0 +1,1051 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(Fonts\Satoshi-Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Satoshi-regular;
+    src: url(Fonts\Satoshi-regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Satoshi-italic;
+    src: url(Fonts\Satoshi-italic.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Samarkan;
+    src: url(Fonts\Saman.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(Fonts\HelveticaNeue.otf) format(opentype);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(Fonts\Helvetica.ttf) format(truetype);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+
+
+.container_mb {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 100%;
+    }
+
+/* Apply styles to the header */
+
+
+.header_mb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Adjust the padding as needed */
+    background-color: #fff; /* Change the background color as desired */
+    border-bottom: 0.8px solid #ccc; 
+    height: 80px;
+    flex: 1 0 0px;
+    gap: unset;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+}
+
+/* Apply styles to the logo */
+.logo-boxmb {
+    display: flex;
+    color: #000;
+    font-family: 'Samarkan';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 123.077% */
+    letter-spacing: 2.6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px; 
+    width: 80px;
+    height: 40px;
+    background-color: #F3F2F2;
+    
+    text-decoration: none; /* Remove underlines */
+}
+
+
+.logo-boxmb a {
+    text-decoration: none; /* Remove underlines */
+    outline: none; /* Remove the focus outline */
+    
+
+}
+
+/* Apply styles to the section links */
+.section-linksmb {
+    display: flex;
+}
+
+.about-linkmb,
+.cv-linkmb {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: 500;
+    line-height: 22px;
+    color: #3B3D41; /* Change the text color as desired */
+    margin-right: 24px; /* Adjust the margin as needed */
+}
+
+
+.content_mb {
+    padding: 0px 0px;
+    flex-shrink: 0;
+    
+    }
+
+
+
+
+
+.intro-content_mb {
+              
+    align-content: center;
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 12px;
+    height: min-content;
+    justify-content: center;
+    max-width: 1560px;
+    
+    padding: 40px 24px 24px;
+    
+    width: 100%;
+
+
+
+
+}
+
+/* Style for the Introduction section headings */
+.intro-content_mb h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    letter-spacing: -.02em;
+    
+background: linear-gradient(270deg, #3B3D41 20.00%,  #7F8083 63.53%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.intro-content_mb .main-text_mb {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    background: linear-gradient(285deg, rgb(59, 61, 65)0%, rgba(61, 63, 67, 1) 1.88487%, rgba(61, 63, 67, 1) 1.88487%, hsl(220, 4%, 52%) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-content_mb .humanizing_mb {
+    background: none; /* Override the background for the .humanizing span */
+    font-family: Replay Pro;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+}
+
+.main-text_mb {
+    font-size: 1.1rem; /* Adjust font size as needed for responsiveness */
+  }
+  
+  /* Style for the 'humanizing' span */
+  .humanizing_mb {
+    font-size: 2rem; /* Adjust font size as needed for responsiveness */
+    font-style: italic;
+  }
+
+
+
+  .intro-description_mb {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    
+}
+
+
+
+.main-divider_mb {
+    border-top: 0.8px solid #ccc;
+    
+    position: sticky;
+    left: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.post-container_mb {
+   
+    
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 0px 24px 0px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+.indexpost_mb {
+    width: 100%;
+    max-width: 1200px; /* Set a max width for each post */
+    
+    display: flex;
+    flex-direction: column; /* Display image and text side by side */
+    
+    
+    
+}
+
+.indexpost-image_mb {
+    width: 100%; /* Image takes up half of the post's width */
+    padding: 0px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+}
+
+
+
+.post-text_mb {
+    width: 100%; /* Text descriptions take up half of the post's width */
+    
+    box-sizing: border-box; /* Include padding in width calculation */
+    align-content: normal;
+    
+}
+
+/* Style for the image inside .post-image */
+.indexpost-image_mb img {
+    width: 100%; /* Ensure the image doesn't exceed the div's width */
+    height: auto; /* Maintain image aspect ratio */
+    border: .5px solid #dfe0e1; /* Add a 2px solid black border */
+    border-radius: 6px; /* Round the corners with a 10px radius */
+    border-style: solid;
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 0.60219px 0.60219px -1.16667px, rgba(0, 0, 0, 0.12) 0px 2.28853px 2.28853px -2.33333px, rgba(0, 0, 0, 0.06) 0px 10px 10px -3.5px, rgba(223, 224, 225, 0.3) 0px 0px 0px 0px; /* Custom box shadow */
+
+}
+
+.indexpost_mb h5 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .86px;
+    line-height: 18px;
+    text-align: start;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    
+}
+
+.indexpost_mb h2 {
+    color: #191B1F;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 0;
+    
+}
+
+
+.indexpost_mb p{
+    color: #A1A1A1;
+font-family: 'Satoshi';
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.2em;
+letter-spacing: 0;
+}
+
+.indexpost_mb .realproblem_mb {
+    color: #736D6D;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+
+.indexpost_mb a {
+    text-decoration: none;
+    color: #0073e6; /* Change the link color to your preference */
+    font-weight: bold;
+}
+
+.indexpost_mb a:hover {
+    color: #004d99; /* Change the link color on hover */
+}
+
+
+
+.image-container_mb {
+    width: 100%; /* Image takes up half of the post's width */
+    padding: 0px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+    padding: 48px 0px 0px;
+}
+
+
+.image-container_mb1 {
+    width: 100%; /* Image takes up half of the post's width */
+    padding: 0px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+    padding: 24px 0px 40px;
+}
+
+.image-container_mb2 {
+    width: 100%; /* Image takes up half of the post's width */
+    padding: 0px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    
+    padding: 16px 0px 0px;
+}
+
+
+.image-container_mb img {
+    width: 100%; /* Ensure the image doesn't exceed the div's width */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+
+
+
+.introdiv_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 64px;
+}
+
+.introdiv_mb h3 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px; 
+    letter-spacing: -0.03em;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.introdiv_mb h5 {
+    color: #A1A1A1;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 140% */
+    
+    
+}
+
+.introdiv_mb p {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-top: 16px;
+    
+}
+
+
+
+
+.banner_mb {
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+}
+
+
+.bbbgoal_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.bbbgoal_mb h3 {
+    color: #3B3D41;
+text-align: center;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 128.571% */
+letter-spacing: -0.03em;
+
+margin-bottom: 12px;
+}
+
+.bbbgoal_mb h5 {
+color: #A1A1A1;
+text-align: center;
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 140% */
+letter-spacing: -0.03px;
+margin-bottom: 16px;
+}
+
+.bbbgoal_mb p {
+    color: #3B3D41;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bbb2_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+
+.bbb2_mb h3 {
+    color: #3B3D41;
+margin-bottom: 16px;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 116.667% */
+letter-spacing: -1.68px;
+}
+
+.bbb2_mb h4{
+    color: #3B3D41;
+
+font-family: Satoshi;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 36px; /* 114.286% */
+letter-spacing: -.03em;
+margin-top: 16px;
+margin-bottom: 8px;
+}
+
+
+.bbb2_mb h5{
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 127.273% */
+letter-spacing: -0.03em;
+margin-top: 64px;
+}
+
+.bbb2_mb h6 {
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 120% */
+letter-spacing: 1.86px;
+text-transform: uppercase;
+
+}
+
+
+
+
+
+.bbb2_mb p {
+            color: #3B3D41;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        margin-top: 16px;
+        
+}
+
+
+
+
+.combotile_mb {
+    display: flex;
+    justify-content: space-between; /* Align the text and image side by side */
+    align-items: center; /* Vertically center content within .bbb2 */
+    margin-bottom: 48px;
+    gap: 32px;
+}
+
+.text-content_mb {
+    flex: 1; /* Allow the left side to take available space */
+    /* Adjust padding as needed */
+}
+
+.image-content_mb {
+    flex: 1; /* Allow the right side to take available space */
+    text-align: left; /* Align the image to the right within its container */
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+.bbb2_mb .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 88px; /* Adjust margin as needed */
+    margin-bottom: 88px;
+}
+
+.bbb2_mb .image-container img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+.bbb3_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+
+
+
+
+
+
+
+
+.bbb3_mb h3 {
+    color: #3B3D41;
+
+font-family: Satoshi;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 34px; /* 116.667% */
+letter-spacing: -0.04em;   
+margin-top: 48px;
+
+}
+
+
+.bbb3_mb h5{
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kin_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px; /* Use a percentage for padding to make it responsive */
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 64px;
+}
+
+.kin_mb h7 {
+    color: #A1A1A1;
+    font-family: Satoshi;
+    font-size: .8rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em; /* Adjust line height as needed */
+    letter-spacing: 0.1rem; /* Use a relative unit for letter spacing */
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.kin_mb h6 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* Adjust line height as needed */
+    letter-spacing: -0.03rem; /* Use a relative unit for letter spacing */
+}
+
+.kin_mb p {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: .9rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* Adjust line height as needed */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.kin_mb .box-container {
+    display: flex;
+    flex-direction: column; /* Stack the boxes vertically on small screens */
+  
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    
+}
+
+.kin_mb .box {
+    width: 100%; /* Take full width on small screens */
+    height: 40vw; /* Use a relative unit for height */
+    background-color: #FAFAFA;
+    margin-top: 16px;
+    
+}
+
+.kin_mb .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 5%; /* Use a percentage for margin to make it responsive */
+    margin-bottom: 5%; /* Use a percentage for margin to make it responsive */
+}
+
+.kin_mb .image-container img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kin2_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 32px 32px; /* Use a percentage for padding to make it responsive */
+    position: relative;
+    width: 100%;
+    
+    
+}
+
+.kin2_mb h7 {
+    color: #A1A1A1;
+    font-family: Satoshi;
+    font-size: .8rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em; /* Adjust line height as needed */
+    letter-spacing: 0.1rem; /* Use a relative unit for letter spacing */
+    text-transform: uppercase;
+    
+}
+
+.kin2_mb h6 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* Adjust line height as needed */
+    letter-spacing: -0.03rem; /* Use a relative unit for letter spacing */
+    margin-top: 12px;
+}
+
+.kin2_mb p {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: .9rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px; /* Adjust line height as needed */
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bbbgoal2_mb {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.bbbgoal2_mb h3 {
+    color: #3B3D41;
+text-align: center;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 128.571% */
+letter-spacing: -0.03em;
+
+margin-bottom: 12px;
+}
+
+.bbbgoal2_mb h5 {
+color: #A1A1A1;
+text-align: center;
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 140% */
+letter-spacing: -0.03px;
+
+}
+
+
+
+
+
+
+
+.footer_mb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Adjust the padding as needed */
+    background-color: #fff; /* Change the background color as desired */
+    border-top: 0.8px solid #ccc; 
+    height: 80px;
+    flex: 1 0 0px;
+    gap: unset;
+    justify-content: space-between;
+    flex-direction: row;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    
+    
+}
+
+.footer_mb h6{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;  
+    letter-spacing: -.01em;
+    line-height: 21px;
+    color: #3B3D41;
+}
+
+
+/* Apply styles to the section links */
+.section-linksmb_f {
+    display: flex;
+}
+
+.about-linkmb_f,
+.cv-linkmb_f {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight: 400;
+    line-height: 22px;
+    color: #8A8A8A; /* Change the text color as desired */
+    margin-right: 24px; /* Adjust the margin as needed */
+}

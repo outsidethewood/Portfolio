@@ -1,0 +1,1735 @@
+@font-face {
+    font-family: Satoshi-light;
+    src: url(Fonts\Satoshi-Light.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Satoshi-regular;
+    src: url(Fonts\Satoshi-regular.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Satoshi-italic;
+    src: url(Fonts\Satoshi-italic.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Samarkan;
+    src: url(Fonts\Saman.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(Fonts\HelveticaNeue.otf) format(opentype);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(Fonts\Helvetica.ttf) format(truetype);
+}
+
+/* Media query for screens 810px and greater, hide mobile content */
+@media (min-width: 810px) {
+    .mobile-content {
+        display: none;
+    }
+}
+
+/* Media query for screens 809px or lower, hide desktop content */
+@media (max-width: 809px) {
+    .desktop-content {
+        display: none;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+/* Define the layout for the container */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 100%;
+    }
+
+
+
+
+
+
+
+/* Style for the vertical header */
+.header {
+    width: 240px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    border-right: 0.8px solid #ccc; 
+    height: 100vh;
+    padding-top: 40px;
+    flex-shrink: 0;
+    z-index: 2;
+    
+}
+
+.main-divider {
+    border-top: 0.8px solid #ccc;
+    width: calc(100%); /* Set the width of the lines */
+    position: sticky;
+    left: 0;
+}
+
+.main-divider2 {
+    border-top: 0.8px solid #ccc;
+    width: calc(100%); /* Set the width of the lines */
+    position: absolute;
+    left: 0;
+}
+
+/* Style for the horizontal lines */
+.section-divider {
+    border-top: 0.8px solid #ccc;
+    width: 100%;
+    position: absolute;
+    bottom: 1;
+    left: 0;
+}
+
+/* Style for the main section */
+.main-section {
+    height: 132px;
+    padding: 0px 32px 32px 32px;
+    flex-shrink: 0; 
+}
+
+.logo-box {
+    display: flex;
+    color: #000;
+    font-family: 'Samarkan';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 123.077% */
+    letter-spacing: 2.6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px; 
+    width: 88px;
+    height: 48px;
+    background-color: #F3F2F2;
+    margin-bottom: 24px; /* Add some space below the box */
+    text-decoration: none; /* Remove underlines */
+}
+
+.logo-box a {
+    text-decoration: none; /* Remove underlines */
+    outline: none; /* Remove the focus outline */
+    
+
+}
+
+/* Style for the clickable sections */
+.section-links {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Style for the links */
+.about-link,
+.cv-link {
+    text-decoration: none;
+    font-family: 'Satoshi';
+    color: #3B3D41;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.4px;
+    transition: color 0.2s ease;    
+}
+
+.about-link:hover,
+.cv-link:hover {
+    color: #8A8A8A;
+}   
+
+
+/* Style for the content section */
+.content-section {
+    
+    padding: 0px 32px;
+    flex-shrink: 0;
+    padding-top: 24px;
+    
+}
+
+.section-heading {
+    color: #9A9A9A;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 1.86px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+/* Style for the subheadings */
+.subheadings h2 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.subheadings h3 {
+    font-size: 18px;
+    margin-top: 8px;
+    margin-bottom: 32px;
+    
+}
+
+/* Style for the links */
+.subheadings h2 a {
+    text-decoration: none; /* Remove underlines */
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+}
+
+
+.subheadings h3 a {
+    text-decoration: none; /* Remove underlines */
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+}
+
+/* Style for the contact section */
+.contact-section {
+    flex-grow: 1; /* Fill the remaining space */
+    padding: 0px 32px;
+    flex-shrink: 0;
+    padding-top: 32px;
+    
+}
+
+.content h1.section-heading {
+    font-size: 24px;
+    margin-top: 32px; /* Add some space above the title */
+    margin-bottom: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style for the content frame */
+.content {
+    flex-grow: 1;
+    
+    position: absolute;
+    align-self: center;
+    background-color: transparent;
+    display: flex; /* Add flex display */
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center children horizontally */
+  text-align: left; /* Center text content */
+  padding-left: 240px;
+    
+}
+
+.container-inner {
+     /* Set the width to 1560 */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1560px;
+    overflow: visible;
+    padding: 40px 64px;
+    position: relative;
+    width: 100%;
+  }
+
+
+.intro-content {
+    
+    height: 428px;
+    background-color: none;
+    margin-bottom: 32px;
+    flex: 1;
+
+    padding-left: 0;
+    padding-right: 64px;
+    max-width: 100%; /* Ensure content doesn't exceed the container width */
+
+}
+
+/* Style for the Introduction section headings */
+.intro-content h3 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    letter-spacing: -.02em;
+    margin-bottom: 32px;
+background: linear-gradient(270deg, #3B3D41 20.00%,  #7F8083 63.53%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
+
+.intro-content .main-text {
+    font-family: Open Sans;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    background: linear-gradient(266deg, #3B3D41 0.44%, rgba(59, 61, 65, 0.45) 89.35%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-content .humanizing {
+    background: none; /* Override the background for the .humanizing span */
+    font-family: Replay Pro;
+    font-size: 54px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.02em;
+}
+
+.main-text {
+    font-size: 1.1rem; /* Adjust font size as needed for responsiveness */
+  }
+  
+  /* Style for the 'humanizing' span */
+  .humanizing {
+    font-size: 2rem; /* Adjust font size as needed for responsiveness */
+    font-style: italic;
+  }
+
+
+
+  .intro-description {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 16px; /* Add some spacing between the headings and the description */
+}
+
+
+
+.post-container {
+    width: 100%;
+    max-width: 1400px; /* Set a max width for the post container */
+    margin-top: 32px; /* Add some spacing between posts and other content */
+    display: flex;
+    flex-direction: column;
+    gap: 88px   ;
+    
+}
+
+
+.indexpost {
+    width: 100%;
+    max-width: 1200px; /* Set a max width for each post */
+    margin-top: 32px; /* Add spacing between posts and other content */
+    display: flex;
+    flex-direction: row; /* Display image and text side by side */
+    gap: 64px;
+    
+    
+    
+}
+
+.indexpost-image {
+    width: 70%; /* Image takes up half of the post's width */
+    padding: 0px;
+    box-sizing: border-box; /* Include padding in width calculation */
+           
+}
+
+
+
+.post-text {
+    width: 30%; /* Text descriptions take up half of the post's width */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in width calculation */
+    align-content: normal;
+    
+}
+
+/* Style for the image inside .post-image */
+.indexpost-image img {
+    width: 100%; /* Ensure the image doesn't exceed the div's width */
+    height: auto; /* Maintain image aspect ratio */
+    border: .5px solid #dfe0e1; /* Add a 2px solid black border */
+    border-radius: 8px; /* Round the corners with a 10px radius */
+    border-style: solid;
+    transition: transform .8s;
+    
+    transition: box-shadow 0.6s, transform 0.6s; /* Add a transition for box-shadow and transform properties */
+    box-shadow: rgba(0, 0, 0, 0.133) 0px 0.60219px 0.60219px -1.16667px, rgba(0, 0, 0, 0.12) 0px 2.28853px 2.28853px -2.33333px, rgba(0, 0, 0, 0.06) 0px 10px 10px -3.5px, rgba(223, 224, 225, 0.3) 0px 0px 0px 0px; /* Custom box shadow */
+
+    
+}   
+
+
+.indexpost-image img:hover {
+    transform: scale(1.005); /* Increase the size of the image on hover */
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0.60219px 0.60219px -1.16667px, rgba(0, 0, 0, 0.15) 0px 2.28853px 2.28853px -2.33333px, rgba(0, 0, 0, 0.1) 0px 10px 10px -3.5px, rgba(223, 224, 225, 0.3) 0px 0px 0px 0px; /* Slightly lighter shadow on hover */
+    
+    transform: scale(1.01   );
+}   
+
+
+.indexpost h5 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.86px;
+    line-height: 1.2em;
+    text-align: start;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    
+}
+
+.indexpost h2 {
+    color: #3b3d41;
+    font-family: 'helvetica';
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* 100% */
+    letter-spacing: -1.92px;
+    margin-bottom: 8px;
+}
+
+
+.indexpost p{
+    color: #A1A1A1;
+font-family: 'Satoshi';
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 48 px; /* 100% */
+letter-spacing: -1.92px;
+}
+
+.indexpost .realproblem {
+    color: #736D6D;
+    font-family: Satoshi;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -1.92px;
+}
+
+.indexpost a {
+    text-decoration: none;
+    color: #0073e6; /* Change the link color to your preference */
+    font-weight: bold;
+}
+
+.indexpost a:hover {
+    color: #004d99; /* Change the link color on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image-background {
+    background-color: #fbfbfb;
+    height: 90vh;
+    width: 100vw;
+    
+    position: relative; /* Add this positioning */
+    z-index: 1; /* Set a lower z-index to place it behind the header */
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+}
+
+
+.custom-background {
+    background-color: #fbfbfb;
+    min-height: 40vh;
+    width: 200vh;
+    /* Add any other styling you want for this div */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.introdiv {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+}
+
+.introdiv h3 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px; /* 128.571% */
+    letter-spacing: -1.68px;
+    margin-bottom: 24px;
+}
+
+.introdiv h5 {
+    color: #A1A1A1;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 140% */
+    letter-spacing: -0.6px;
+    margin-bottom: 16px;
+}
+
+.introdiv p {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-top: 16px;
+    margin-bottom: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bgoal {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+}
+
+.bgoal h3 {
+    color: #3B3D41;
+text-align: center;
+font-family: Satoshi;
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 72px; /* 128.571% */
+letter-spacing: -1.68px;
+margin-top: 88px;
+margin-bottom: 16px;
+}
+
+.bgoal h5 {
+    color: #A1A1A1;
+text-align: center;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+letter-spacing: -0.068px;
+margin-bottom: 16px;
+}
+
+.bgoal p {
+    color: #3B3D41;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-bottom: 88px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.kin {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0 5%; /* Use a percentage for padding to make it responsive */
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.kin h7 {
+    color: #A1A1A1;
+    font-family: Satoshi;
+    font-size: 1rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2em; /* Adjust line height as needed */
+    letter-spacing: 0.1rem; /* Use a relative unit for letter spacing */
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.kin h6 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 2rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em; /* Adjust line height as needed */
+    letter-spacing: -0.02rem; /* Use a relative unit for letter spacing */
+}
+
+.kin p {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 1rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; /* Adjust line height as needed */
+    margin-top: 16px;
+}
+
+.kin .box-container {
+    display: flex;
+    flex-direction: row; /* Stack the boxes vertically on small screens */
+    margin-top: 5%; /* Use a percentage for margin to make it responsive */
+    max-width: 100%; /* Ensure it doesn't exceed the container's width */
+    gap: 16px;
+}
+
+.kin .box {
+    width: 100%; /* Take full width on small screens */
+    height: 10vw; /* Use a relative unit for height */
+    background-color: #FAFAFA;
+   
+}
+
+
+
+
+
+.kin .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 5%; /* Use a percentage for margin to make it responsive */
+    margin-bottom: 5%; /* Use a percentage for margin to make it responsive */
+}
+
+.kin .image-container img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+.ovv {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+}
+
+.ovv h3 {
+    color: #3B3D41;
+text-align: center;
+font-family: Satoshi;
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 72px; /* 128.571% */
+letter-spacing: -1.68px;
+margin-top: 88px;
+margin-bottom: 16px;
+}
+
+.ovv h5 {
+    color: #A1A1A1;
+text-align: center;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+letter-spacing: -0.068px;
+margin-bottom: 16px;
+}
+
+
+.ovv .image-container1 {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 88px; /* Adjust margin as needed */
+    margin-bottom: 88px;
+}
+
+.ovv .image-container1 img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+.ovv h7 {
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 120% */
+letter-spacing: 1.86px;
+text-transform: uppercase;
+margin-bottom: 16px;
+margin-top: 16px;
+}
+
+
+.ovv h4 {
+    color: #3B3D41;
+text-align: left;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 116.667% */
+letter-spacing: -1.68px;
+margin-bottom: 40px;
+}
+
+.ovv .image-container2 {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: 48px;
+}
+
+.ovv .image-container2 img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+.ovv .image-container3 {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: 40px;
+}
+
+.ovv .image-container3 img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}   
+
+
+.ovv h8 {
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 120% */
+letter-spacing: 1.86px;
+text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+
+.ovv h6 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px; /* 127.273% */
+    letter-spacing: -0.84px;
+    margin-bottom: 88px;
+}
+
+
+
+.summary {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+}
+
+.summary h3 {
+    color: #3B3D41;
+text-align: center;
+font-family: Satoshi;
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 72px; /* 128.571% */
+letter-spacing: -1.68px;
+margin-top: 88px;
+margin-bottom: 16px;
+}
+
+.summary h5 {
+    color: #A1A1A1;
+text-align: center;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+letter-spacing: -0.068px;
+margin-bottom: 16px;
+}
+
+.summary .image-container1 {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 88px; /* Adjust margin as needed */
+    margin-bottom: 88px;
+}
+
+.summary .image-container1 img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+.bbbgoal {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-bottom: 88px;
+}
+
+.bbbgoal h3 {
+    color: #3B3D41;
+text-align: center;
+font-family: Satoshi;
+font-size: 56px;
+font-style: normal;
+font-weight: 500;
+line-height: 72px; /* 128.571% */
+letter-spacing: -1.68px;
+margin-top: 88px;
+margin-bottom: 16px;
+}
+
+.bbbgoal h5 {
+    color: #A1A1A1;
+text-align: center;
+font-family: Satoshi;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 140% */
+letter-spacing: -0.068px;
+margin-bottom: 16px;
+}
+
+.bbbgoal p {
+    color: #3B3D41;
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+.bbbgoal .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 88px; /* Adjust margin as needed */
+    margin-bottom: 88px;
+}
+
+
+
+.bbbgoal .image-container img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+.bbbgoal .image-container4 {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 88px; /* Adjust margin as needed */
+    
+}
+
+
+.bbbgoal .image-container4 img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+.bbb1 {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.bbb1 h7 {
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 120% */
+letter-spacing: 1.86px;
+text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+.bbb1 h5 {
+    color: #3B3D41;
+margin-bottom: 16px;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 116.667% */
+letter-spacing: -1.68px;
+}
+
+.bbb1 p {
+            color: #3B3D41;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        margin-top: 16px;
+}
+
+.image-grid {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column; /* Arrange rows vertically */
+    gap: 32px; /* Gap between rows */
+    margin-bottom: 88px;    
+}
+
+.row {
+    display: flex;
+    gap: 32px; /* Gap between columns */
+}
+
+.col {
+    flex: 1; /* Each column takes an equal portion of the row */
+}
+
+img {
+    width: 464px;
+    height: 312px;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.bbb2 {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-top: 48px;
+}
+
+
+.bbb2 h3 {
+    color: #3B3D41;
+margin-bottom: 16px;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 116.667% */
+letter-spacing: -1.68px;
+}
+
+.bbb2 h4{
+    color: #3B3D41;
+
+font-family: Satoshi;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 32px; /* 114.286% */
+letter-spacing: -1.68px;
+}
+
+
+.bbb2 h5{
+    color: #3B3D41;
+font-family: Satoshi;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 127.273% */
+letter-spacing: -0.84px;
+border-top: 16px;
+}
+
+.bbb2 h6 {
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 120% */
+letter-spacing: 1.86px;
+text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+
+
+
+
+.bbb2 p {
+            color: #3B3D41;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        margin-top: 16px;
+}
+
+
+
+
+.combotile {
+    display: flex;
+    justify-content: space-between; /* Align the text and image side by side */
+    align-items: center; /* Vertically center content within .bbb2 */
+    margin-bottom: 88px;
+    gap: 32px;
+}
+
+.text-content {
+    flex: 1; /* Allow the left side to take available space */
+    /* Adjust padding as needed */
+}
+
+.image-content {
+    flex: 1; /* Allow the right side to take available space */
+    text-align: left; /* Align the image to the right within its container */
+}
+
+img {
+    width: 464px;
+    height: 272px;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+
+.bbb2 .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 88px; /* Adjust margin as needed */
+    margin-bottom: 88px;
+}
+
+.bbb2 .image-container img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bbb2_5 {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-top: 48px;
+}
+
+
+.bbb2_5 h3 {
+    color: #3B3D41;
+margin-bottom: 16px;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 116.667% */
+letter-spacing: -1.68px;
+}
+
+
+
+.bbb2_5 h6 {
+    color: #A1A1A1;
+font-family: Satoshi;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 16.8px; /* 120% */
+letter-spacing: 1.86px;
+text-transform: uppercase;
+margin-bottom: 16px;
+}
+
+
+
+
+
+.bbb2_5 p {
+            color: #3B3D41;
+        font-family: Satoshi;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+        margin-top: 16px;  
+        margin-bottom: 24px;
+}
+
+
+.image-grid {
+    max-width: 960px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px; /* Gap between rows and columns */
+    flex-shrink: unset;
+    margin-bottom: 64px;
+}
+
+/* Apply styles to each image container */
+.image {
+    max-width: 464px; /* Adjust image width as needed */
+    height: 312px; /* Adjust image height as needed */
+    overflow: hidden;
+    
+}
+
+/* Apply styles to images for zoomed-in view */
+.image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+@media (max-width: 960px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Switch to a single column layout */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.bbb3 {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-self: center;
+    height: min-content;
+    justify-content: center;
+    max-width: 1024px;
+    overflow: visible;
+    padding: 0px 32px;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
+
+.bbb3 h3 {
+    color: #3B3D41;
+margin-bottom: 16px;
+font-family: Satoshi;
+font-size: 36px;
+font-style: normal;
+font-weight: 500;
+line-height: 42px; /* 116.667% */
+letter-spacing: -1.68px;
+margin-top: 24px;
+}
+
+
+.bbb3 h5{
+    color: #3B3D41;
+font-family: Satoshi;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 28px; /* 127.273% */
+letter-spacing: -0.84px;
+margin-bottom: 64px;
+}
+
+
+.bbb3 .image-container {
+    text-align: center; /* Center the image horizontally */
+    margin-bottom: 32px;
+}
+
+.bbb3 .image-container img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    max-width: 100%; /* Ensure the image doesn't exceed its original dimensions */
+    height: auto; /* Maintain the image's aspect ratio */
+}
+
+
+
+
+
+
+/* Style for the Commentary.html*/
+
+.cmtimage-background {
+    background-color: #fffbf2;
+    height: 55vh;
+    width: 100vw;
+    
+    position: relative; /* Add this positioning */
+    z-index: 1; /* Set a lower z-index to place it behind the header */
+}
+
+
+
+
+
+
+
+
+/* Style ending for the Commentary.html*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container_mb {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    width: 100%;
+    }
+
+/* Apply styles to the header */
+.header_mb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Adjust the padding as needed */
+    background-color: #fff; /* Change the background color as desired */
+    border-bottom: 0.8px solid #ccc; 
+    height: 80px;
+    flex: 1 0 0px;
+    gap: unset;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+/* Apply styles to the logo */
+.logo-boxmb {
+    display: flex;
+    color: #000;
+    font-family: 'Samarkan';
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 123.077% */
+    letter-spacing: 2.6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px; 
+    width: 80px;
+    height: 40px;
+    background-color: #F3F2F2;
+    
+    text-decoration: none; /* Remove underlines */
+}
+
+
+.logo-boxmb a {
+    text-decoration: none; /* Remove underlines */
+    outline: none; /* Remove the focus outline */
+    
+
+}
+
+/* Apply styles to the section links */
+.section-linksmb {
+    display: flex;
+}
+
+.about-linkmb,
+.cv-linkmb {
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: 500;
+    line-height: 22px;
+    color: #3B3D41; /* Change the text color as desired */
+    margin-right: 24px; /* Adjust the margin as needed */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cv_kin {
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Center text content */
+    
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-width: 1024px;
+    overflow: visible;
+    position: relative;
+    width: 100%;
+    margin-top: 16px;
+    align-items: flex-start; /* Align content to the left */
+}
+
+.cv_kin h7 {
+    color: #A1A1A1;
+    font-family: Satoshi;
+    font-size: 14px; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.2em; /* Adjust line height as needed */
+    letter-spacing: 1.86px; /* Use a relative unit for letter spacing */
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+
+
+
+.cv_kin h6 {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 56px; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 500;
+    line-height: 64px; /* Adjust line height as needed */
+    letter-spacing: -0.03rem; /* Use a relative unit for letter spacing */
+    margin-top: 32px;
+    text-align: left;
+}
+
+
+
+
+
+
+.cv_kin p {
+    color: #3B3D41;
+    font-family: Satoshi;
+    font-size: 1rem; /* Adjust font size as needed */
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5em; /* Adjust line height as needed */
+    margin-top: 16px;
+}
