@@ -54,9 +54,9 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px; /* Adjust the padding as needed */
-    background-color: #fff; /* Change the background color as desired */
+   
     border-bottom: 0.8px solid #ccc; 
-    height: 80px;
+    
     flex: 1 0 0px;
     gap: unset;
     justify-content: space-between;
@@ -66,7 +66,12 @@
     left: 0;
     right: 0;
     z-index: 1000;
-    
+
+
+     background-color: rgba(255  , 255, 255, 0.75);
+    backdrop-filter: blur( 8.5px );
+    -webkit-backdrop-filter: blur( 8.5px );
+    height: 72px;
 }
 
 /* Apply styles to the logo */
