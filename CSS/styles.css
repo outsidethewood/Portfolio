@@ -8,10 +8,10 @@
 
 @font-face {
     font-family: Satoshi-regular;
-    src: url(Fonts\Satoshi-regular.ttf) format(truetype);
-    src: url(Fonts\Satoshi-regular.eot);
-    src: url(Fonts\Satoshi-regular.woff) format(woff);
-    src: url(Fonts\Satoshi-regular.woff2) format(woff2);
+    src: url(Fonts\Satoshi-Regular.ttf) format(truetype);
+    src: url(Fonts\Satoshi-Regular.eot);
+    src: url(Fonts\Satoshi-Regular.woff) format(woff);
+    src: url(Fonts\Satoshi-Regular.woff2) format(woff2);
 }
 
 @font-face {
@@ -364,7 +364,7 @@ background-clip: text;
 
   .intro-description {
     color: #3B3D41;
-    font-family: 'Satoshi';
+    font-family: 'Satoshi-Regular';
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
