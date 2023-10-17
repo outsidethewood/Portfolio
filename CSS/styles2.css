@@ -1,16 +1,25 @@
 @font-face {
     font-family: Satoshi-light;
     src: url(Fonts\Satoshi-Light.ttf) format(truetype);
+    src: url(Fonts\Satoshi-Light.eot);
+    src: url(Fonts\Satoshi-Light.woff) format(woff);
+    src: url(Fonts\Satoshi-Light.woff2) format(woff2);
 }
 
 @font-face {
     font-family: Satoshi-regular;
     src: url(Fonts\Satoshi-regular.ttf) format(truetype);
+    src: url(Fonts\Satoshi-regular.eot);
+    src: url(Fonts\Satoshi-regular.woff) format(woff);
+    src: url(Fonts\Satoshi-regular.woff2) format(woff2);
 }
 
 @font-face {
     font-family: Satoshi-italic;
     src: url(Fonts\Satoshi-italic.ttf) format(truetype);
+    src: url(Fonts\Satoshi-italic.eot);
+    src: url(Fonts\Satoshi-italic.woff) format(woff);
+    src: url(Fonts\Satoshi-italic.woff2) format(woff2);
 }
 
 @font-face {
