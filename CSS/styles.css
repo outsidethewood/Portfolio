@@ -27,8 +27,9 @@
 }
 
 @font-face {
-    font-family: Samarkan;
-    src: url(Fonts\Saman.ttf) format(truetype);
+    font-family: 'Samarkan';
+    src: url(../../Portfolio/Fonts/Samarkan.woff) format(woff),
+    url(../../Portfolio/Fonts/Samarkan.woff2) format(woff2);
 }
 
 @font-face {
