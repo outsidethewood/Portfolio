@@ -2,18 +2,28 @@
     font-family: 'Satoshi-light';
     src: url(Fonts\Satoshi-Light.woff) format(woff),
          url(Fonts\Satoshi-Light.woff2) format(woff2);
+         font-weight: 300;
+        font-display: swap;
+        font-style: normal;
 }
+
 
 @font-face {
     font-family: 'Satoshi-regular';
     src: url(Fonts\Satoshi-Regular.woff) format(woff),
          url(Fonts\Satoshi-Regular.woff2) format(woff2);
+         font-weight: 400;
+        font-display: swap;
+        font-style: normal;
 }
 
 @font-face {
     font-family: 'Satoshi-italic';
     src: url(Fonts\Satoshi-italic.woff) format(woff),
          url(Fonts\Satoshi-italic.woff2) format(woff2);
+         font-weight: 400;
+        font-display: swap;
+         font-style: italic;
 }
 
 @font-face {
