@@ -50,7 +50,7 @@
                 <div class="contact-section">
                     <h1 class="section-heading">Contact</h1>
                     <div class="subheadings">
-                    <h2><a href="mailto:rohithsatheesan99@gmail.com">Mail</a></h2>
+                    <h2><a href="#" id="copyEmail">Mail</a></h2>
                     <h2><a href="https://wellfound.com/u/rohith-s-10" target="_blank">Wellfound (Angel List)</a></h2>
 
                     
@@ -269,6 +269,26 @@
 
 
     </div>
+
+
+
+
+    <script>
+        const copyEmailLink = document.getElementById('copyEmail');
+
+        copyEmailLink.addEventListener('click', function () {
+            const email = 'rohithsatheesan99@gmail.com';
+            const tempInput = document.createElement('input');
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+            alert('Email address copied to clipboard: ' + email);
+        });
+    </script>
+
+
 
 
 </body>
