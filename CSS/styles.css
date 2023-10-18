@@ -207,6 +207,7 @@
 .subheadings h2 {
     font-size: 18px;
     margin: 8px 0;
+    letter-spacing: -0.2px;
 }
 
 .subheadings h3 {
