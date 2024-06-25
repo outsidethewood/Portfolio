@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Satoshi-light';
-    src: url(../../Portfolio/Fonts/Satoshi-Light.woff) format(woff),
-         url(../../Portfolio/Fonts/Satoshi-Light.woff2) format(woff2);
+    src: url(./Portfolio/Fonts/Satoshi-Light.woff) format(woff),
+         url(./Portfolio/Fonts/Satoshi-Light.woff2) format(woff2);
          font-weight: 300;
         font-display: swap;
         font-style: normal;
@@ -10,8 +10,8 @@
 
 @font-face {
     font-family: 'Satoshi-regular';
-    src: url(../../Portfolio/Fonts/Satoshi-Regular.woff) format(woff),
-         url(../../Portfolio/Fonts/Satoshi-Regular.woff2) format(woff2);
+    src: url(./Portfolio/Fonts/Satoshi-Regular.woff) format(woff),
+         url(./Portfolio/Fonts/Satoshi-Regular.woff2) format(woff2);
          font-weight: 400;
         font-display: swap;
         font-style: normal;
@@ -19,8 +19,8 @@
 
 @font-face {
     font-family: 'Satoshi-italic';
-    src: url(../../Portfolio/Fonts/Satoshi-italic.woff) format(woff),
-         url(../../Portfolio/Fonts/Satoshi-italic.woff2) format(woff2);
+    src: url(./Portfolio/Fonts/Satoshi-italic.woff) format(woff),
+         url(./Portfolio/Fonts/Satoshi-italic.woff2) format(woff2);
          font-weight: 400;
         font-display: swap;
          font-style: italic;
@@ -28,8 +28,8 @@
 
 @font-face {
     font-family: 'Samarkan';
-    src: url(../../Portfolio/Fonts/Samarkan.woff) format(woff),
-    url(../../Portfolio/Fonts/Samarkan.woff2) format(woff2);
+    src: url(./Portfolio/Fonts/Samarkan.woff) format(woff),
+    url(./Portfolio/Fonts/Samarkan.woff2) format(woff2);
 }
 
 @font-face {
