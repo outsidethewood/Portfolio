@@ -192,7 +192,7 @@
 
 .section-heading {
     color: #9A9A9A;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -202,6 +202,21 @@
     margin-bottom: 16px;
     margin-top: 16px;
 }
+
+
+.section-heading h1 {
+    color: #9A9A9A;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: 1.86px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
 
 /* Style for the subheadings */
 .subheadings h2 {
